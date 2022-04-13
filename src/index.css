@@ -1,3 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "PrintBold";
+  src: url("./fonts/Print-Clearly/PrintBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "PrintClearly";
+  src: url("./fonts/Print-Clearly/PrintClearly.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "PrintDashed";
+  src: url("./fonts/Print-Clearly/PrintDashed.otf") format("opentype");
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +29,16 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.font-print-bold {
+  font-family: 'PrintBold';
+}
+
+.font-print-clearly {
+  font-family: 'PrintClearly';
+}
+
+.font-print-dashed {
+  font-family: 'PrintDashed';
 }

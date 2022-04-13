@@ -4,6 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import './fonts/Print-Clearly/PrintBold.otf';
+import './fonts/Print-Clearly/PrintClearly.otf';
+import './fonts/Print-Clearly/PrintDashed.otf';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
