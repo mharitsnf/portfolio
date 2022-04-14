@@ -1,13 +1,11 @@
-import { useState } from "react";
 
 export const Resume = () => {
-    const [isPinned, setIsPinned] = useState(false);
 
     return (
         <div className="text-white py-[4vh] px-[8vw] h-full overflow-scroll">
             <div className="flex flex-col gap-y-[1vh]">
                 <div className="h-[15vh]" />
-                <div className={`flex flex-col ${isPinned ? 'pinned' : 'default'}`} id="title" >
+                <div className={`flex flex-col default`} id="title" >
                     <p className="font-print-clearly text-[5vw]">Harits Nur Fauzan</p>
                     <h1 className="font-print-bold text-[18vw]">Resume</h1>
                 </div>
