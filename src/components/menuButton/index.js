@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 
-export const MenuButton = ({ menu, handlePageChange }) => {
+export const MenuButton = ({ menu, route, handlePageChange }) => {
     return (
         <div className="text-white font-print-clearly h-min text-[4vw] md:text-[1.5vw]" >
-            <button onClick={handlePageChange}>{menu}</button>
+            <Link to={route}>{menu}</Link>
         </div>
     );
 }
