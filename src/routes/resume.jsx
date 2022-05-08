@@ -11,18 +11,90 @@ export default function Resume() {
                 <div className="flex flex-col gap-y-[1vh]">
                     <div className="h-[10vh]" />
                     <h1 className="font-print-bold text-[18vw]">Resume</h1>
-                    <p className="font-print-clearly">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas lacus a consequat vehicula. Vivamus pulvinar, ipsum a consectetur iaculis, metus ante scelerisque ante, eget condimentum magna dui non lectus. Etiam sollicitudin condimentum sodales. Vivamus sit amet risus diam. Praesent tellus velit, finibus quis posuere vel, faucibus dapibus leo. Phasellus eget porta eros. Proin purus ex, posuere id quam in, molestie semper augue. Donec pharetra nec mi ut scelerisque. Quisque dignissim, nibh ut tempus dignissim, mauris lorem viverra lorem, sed pharetra orci nulla et libero. Aenean venenatis ut nunc eget varius.
+                    
+                    <div className="h-[3vh]" />
 
-                        Fusce est odio, semper ut efficitur sed, maximus quis nisi. Sed porta massa eget dui luctus, eu sagittis odio rutrum. Mauris in sodales erat, vel consectetur leo. Etiam posuere nisi dui, quis facilisis dolor finibus vitae. Nulla convallis diam et facilisis ultricies. Proin vestibulum tincidunt mauris vitae ullamcorper. Nunc dictum eros sed turpis porta rutrum. Nunc congue hendrerit pulvinar. Suspendisse vitae faucibus nibh. Proin elementum interdum aliquet. Integer auctor erat id nunc lobortis hendrerit. Phasellus tincidunt felis neque.
+                    <div className="flex flex-col gap-[8vh]">
+                        <div>
+                            <h2 className="font-print-bold text-[12vw]">Work Experience</h2>
+                            <div className="flex flex-col gap-[4vh]">
+                                <div className="flex flex-col gap-[2vh]">
+                                    <h3 className="font-print-bold text-[6vw]">Career break</h3>
+                                    <p className="font-print-clearly text-[4vw]">May 2020 - August 2021</p>
+                                    <p className="font-print-clearly">
+                                        Left the previous job due to being admitted to KTH on April 2020 but decided not to depart due to the pandemic. During this period, I spent my time learning about game development and computer graphics and participated on various game jams. Skills learned including Godot Engine, Blender, and Game Design.
+                                    </p>
+                                </div>
+                                <div className="flex flex-col gap-[2vh]">
+                                    <h3 className="font-print-bold text-[6vw]">Software Engineer, <a href="https://terralogiq.com/">Terralogiq</a></h3>
+                                    <p className="font-print-clearly text-[4vw]">April 2019 - May 2020 • Jakarta, Indonesia • Full-Time</p>
+                                    <p className="font-print-bold">Roles:</p>
+                                    <div className="font-print-clearly">
+                                        <li>Developed new and maintained existing RESTful APIs for ongoing and finished client projects while utilizing Google Map's APIs. Stack used includes PHP, Python, NodeJS, MySQL, and Redis.</li>
+                                        <li>Developed responsive web and mobile applications using ReactJS and React Native.</li>
+                                    </div>
+                                    <p className="font-print-bold">Developed Products:</p>
+                                    <div className="font-print-clearly">
+                                        <li className="underline underline-offset-1"><a target="_blank" rel="noreferrer" href="https://terralogiq.com/portfolio/yakult/">Yakult Propaganda Mobile for analyzing potential sales locations.</a></li>
+                                        <li className="underline underline-offset-1"><a target="_blank" rel="noreferrer" href="https://terralogiq.com/portfolio/jne/">JNE Agent Management System.</a></li>
+                                    </div>
+                                </div>
+                                <div className="flex flex-col gap-[2vh]">
+                                    <h3 className="font-print-bold text-[6vw]">Software Engineer, Pandusiwi</h3>
+                                    <p className="font-print-clearly text-[4vw]">January 2018 - February 2018 • Bandung, Indonesia • Internship</p>
+                                    <p className="font-print-bold">Roles:</p>
+                                    <div className="font-print-clearly">
+                                        <li>Developed a CMS for a pilot project which aims to solve first-mile logistic problems such as automatic courier route selection. Stack used includes Django and MySQL.</li>
+                                    </div>
+                                </div>
+                                <div className="flex flex-col gap-[2vh]">
+                                    <h3 className="font-print-bold text-[6vw]">Back-end Engineer, Ruangguru</h3>
+                                    <p className="font-print-clearly text-[4vw]">June 2017 - September 2017 • Jakarta, Indonesia • Internship</p>
+                                    <p className="font-print-bold">Roles:</p>
+                                    <div className="font-print-clearly">
+                                        <li>Developed and maintained RESTful APIs including their unit tests using Laravel/Lumen.</li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                        Nunc dignissim luctus tortor id sagittis. Etiam tellus enim, eleifend ut dolor eget, pharetra convallis quam. Nullam vehicula enim in arcu pharetra mattis. Phasellus auctor ex nec turpis consectetur aliquet. Duis iaculis lacus quis neque molestie, at pretium lectus condimentum. Maecenas elementum aliquam orci ut cursus. Suspendisse auctor dapibus massa, eu feugiat lacus rhoncus vitae. Nullam iaculis ultrices diam, vitae interdum sapien placerat ac. Cras at vulputate risus. In at volutpat diam. Vivamus vitae accumsan enim, tincidunt congue massa. Sed id fringilla sapien. Sed euismod ipsum ut tincidunt mattis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+                        <div>
+                            <h2 className="font-print-bold text-[12vw]">Education</h2>
+                            <div className="flex flex-col gap-[2vh]">
+                                <div className="flex flex-col">
+                                    <h3 className="font-print-bold text-[6vw]">M.Sc Interactive Media Technology</h3>
+                                    <p className="font-print-bold">KTH Royal Institute of Technology</p>
+                                    <p className="font-print-clearly">August 2021 - Now</p>
+                                </div>
+                                <div className="flex flex-col">
+                                    <h3 className="font-print-bold text-[6vw]">B.Sc Computer Science</h3>
+                                    <p className="font-print-bold">Universitas Indonesia</p>
+                                    <p className="font-print-clearly">September 2014 - January 2019</p>
+                                </div>
+                            </div>
+                        </div>
 
-                        Quisque gravida diam eu purus porta aliquet. Fusce laoreet arcu turpis, vitae rhoncus nunc luctus quis. Sed sollicitudin faucibus eros, quis placerat ipsum. Curabitur iaculis libero in fringilla ultrices. Donec placerat eleifend tortor, a luctus metus mattis vitae. Sed sodales pharetra ante eu luctus. Proin varius sapien lacus, ut cursus nulla convallis ac.
+                        <div>
+                            <h2 className="font-print-bold text-[12vw]">Skills</h2>
+                            <div className="flex flex-col gap-[1vh]">
+                                <h3 className="font-print-bold text-[6vw]">Programming Languages and Tools</h3>
+                                <p className="font-print-bold">Sorted by comfortability</p>
+                                <div className="flex flex-wrap font-print-clearly gap-[4vw] justify-start">
+                                    <p>JavaScript</p>
+                                    <p>Godot / GDScript</p>
+                                    <p>Unity / C#</p>
+                                    <p>HLSL</p>
+                                    <p>C++</p>
+                                    <p>PHP</p>
+                                    <p>Python</p>
+                                </div>
+                            </div>
+                        </div>
 
-                        Mauris malesuada tellus tortor, eu cursus nisi convallis vel. Vivamus auctor eros feugiat tellus condimentum bibendum. Mauris placerat euismod ipsum, ac condimentum velit tincidunt et. Nunc aliquam sed urna ut tristique. Sed dapibus euismod libero, sit amet tincidunt diam luctus eu. Integer varius vehicula congue. Integer eget lacinia ligula, sit amet imperdiet odio.
+                    </div>
 
-                    </p>
                     <div className="h-[15vh]" />
+
                 </div>
             </div>
             <Menu />
