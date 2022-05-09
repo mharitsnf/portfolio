@@ -7,7 +7,7 @@ import { getWorkExperiences, getEducations, getSkills } from "../data/resumeData
 export default function Resume() {
     return (
         <PageContainer>
-            <PageTitle>Projects</PageTitle>
+            <PageTitle>Resume</PageTitle>
             
             <div className="h-[1vh] hidden lg:block" />
 
