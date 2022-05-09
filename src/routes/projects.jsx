@@ -24,15 +24,21 @@ export default function Projects() {
                     {
                         getProjects().map(project => {
                             return (
-                                <Link to={`/projects/${project.route}`} key={project.route} className="
-                                        bg-white rounded-md
-                                        h-[40vh] w-full lg:w-[25vw]
-                                        flex justify-center items-end 
-                                        px-[4vw] py-[2vh]
-                                        font-print-clearly 
-                                        text-black text-[6vw] lg:text-[2vw]
-                                    ">
-                                    { project.name }
+                                <Link to={`/projects/${project.route}`} key={project.route}
+                                    className="
+                                    rounded-md
+                                    h-[40vh] w-full lg:w-[25vw]
+                                    font-print-bold 
+                                    text-white text-[6vw] lg:text-[2vw]
+                                    bg-cover bg-center
+                                    "
+                                    style={{
+                                        backgroundImage: `url(${project.logo})`
+                                    }}
+                                >
+                                    <div className="h-full w-full bg-black flex items-end p-[2rem]" style={{ backgroundColor: "rgba(0,0,0,0.5)" }}>
+                                        <p className="bottom-[2rem] left-[2rem]" style={{ opacity: "1" }}>{project.name}</p>
+                                    </div>
                                 </Link>
                             );
                         })
@@ -53,15 +59,21 @@ export default function Projects() {
                     {
                         getWebAndApps().map(project => {
                             return (
-                                <Link to={`/projects/${project.route}`} key={project.route} className="
-                                        bg-white rounded-md
-                                        h-[40vh] w-full lg:w-[25vw]
-                                        flex justify-center items-end 
-                                        px-[4vw] py-[2vh]
-                                        font-print-clearly 
-                                        text-black text-[6vw] lg:text-[2vw]
-                                    ">
-                                    {project.name}
+                                <Link to={`/projects/${project.route}`} key={project.route}
+                                    className="
+                                    rounded-md
+                                    h-[40vh] w-full lg:w-[25vw]
+                                    font-print-bold 
+                                    text-white text-[6vw] lg:text-[2vw]
+                                    bg-cover bg-center
+                                    "
+                                    style={{
+                                        backgroundImage: `url(${project.logo})`
+                                    }}
+                                >
+                                    <div className="h-full w-full bg-black flex items-end p-[2rem]" style={{ backgroundColor: "rgba(0,0,0,0.5)" }}>
+                                        <p className="bottom-[2rem] left-[2rem]" style={{ opacity: "1" }}>{project.name}</p>
+                                    </div>
                                 </Link>
                             );
                         })
@@ -82,15 +94,9 @@ export default function Projects() {
                     {
                         getPublications().map(project => {
                             return (
-                                <Link to={`/projects/${project.route}`} key={project.route} className="
-                                        bg-white rounded-md
-                                        h-[40vh] w-full lg:w-[25vw]
-                                        flex justify-center items-end 
-                                        px-[4vw] py-[2vh]
-                                        font-print-clearly 
-                                        text-black text-[6vw] lg:text-[2vw]
-                                    ">
-                                    {project.name}
+                                <Link to={`/projects/${project.route}`} key={project.route} className="flex flex-col gap-y-[2vh]">
+                                    <p className="font-print-bold text-[4.5vw] lg:text-[2vw]">{ project.name }</p>
+                                    <p className="font-print-clearly text-[3.5vw] lg:text-[1.5vw]">{ project.time }</p>
                                 </Link>
                             );
                         })

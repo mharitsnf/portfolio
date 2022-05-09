@@ -14,7 +14,7 @@ export default function Project() {
                 <div className="h-[10vh]" />
 
                 <div className="flex flex-col gap-y-[10vh]">
-                    <PageTitle>{project.name}</PageTitle>
+                    <PageTitle route={ project.route }>{project.name}</PageTitle>
 
                     <div>
                         <p className="font-print-clearly lg:text-[2vw]">

@@ -1,5 +1,6 @@
 import ItchIcon from "../images/itch.png"
 import LinkIcon from "../images/link.png"
+import AnimeetLogo from "../images/animeet-logo.png"
 
 let projects = [
     {
@@ -9,6 +10,7 @@ let projects = [
         link: "https://arsith.itch.io/stacc",
         linkIcon: ItchIcon,
         callForAction: "Play on Itch.io",
+        logo: "https://img.itch.zone/aW1nLzYyMTM2ODIucG5n/original/Fqtazd.png",
     },
     {
         name: "Deep Dive",
@@ -17,6 +19,7 @@ let projects = [
         link: "https://arsith.itch.io/deep-dive",
         linkIcon: ItchIcon,
         callForAction: "Play on Itch.io",
+        logo: "https://img.itch.zone/aW1nLzU3ODAwMTIucG5n/original/bxG28N.png"
     },
     {
         name: "The Voice",
@@ -25,6 +28,7 @@ let projects = [
         link: "https://arsith.itch.io/the-voice",
         linkIcon: ItchIcon,
         callForAction: "Play on Itch.io",
+        logo: "https://img.itch.zone/aW1nLzM4NTA3NTQucG5n/original/Vl3Vyi.png"
     },
 ]
 
@@ -36,13 +40,15 @@ let webAndApps = [
         link: "https://animeet-nine.vercel.app/",
         linkIcon: LinkIcon,
         callForAction: "Open webpage",
+        logo: AnimeetLogo
     },
 ]
 
 let publications = [
     {
-        name: "Test",
-        route: "test",
+        name: "Feature Extraction from Smartphone Images by Using Elliptical Fourier Descriptor, Centroid and Area for Recognizing Indonesian Sign Language SIBI (Sistem Isyarat Bahasa Indonesia)",
+        route: "ICOIAS2019",
+        time: "February 2019",
         desc: "The Voice is a turn based game made in Godot Engine 3 for GMTK Game Jam 2020. The players must compete in a tournament with the character. However, the character might neglect the player's intention and perform a different action instead. In order to be on sync, the player must maintain a good relationship with the character.",
         link: "https://ieeexplore.ieee.org/abstract/document/8782484?casa_token=FLwZEgHFbB8AAAAA:W9mv5s2AxZlcbYljq4o8cKIDMKvX1Lvxtly6RO9pQuiNgw7z4V0sRbET9DFPNrzxl_WbfV_o",
         linkIcon: LinkIcon,
