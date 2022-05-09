@@ -9,22 +9,18 @@ import Itch from "../images/itch.png"
 
 export default function Contact() {
     return (
-        <div className="bg-dark-blue h-screen relative">
-            <Header />
-            <div className="text-white py-[4vh] px-[8vw] h-full overflow-scroll">
-                <div className="flex flex-col gap-y-[1vh]">
-                    <div className="h-[10vh]" />
-                    <PageTitle>Contact</PageTitle>
-                    <div className="h-[2vh]" />
-                    <NonLinkedIcon icon={Email} alt="Mail logo">mharitsnf@gmail.com</NonLinkedIcon>
-                    <div className="h-[2vh]" />
-                    <LinkedIcon icon={Linkedin} href="https://www.linkedin.com/in/mharitsnf/" alt="Linkedin logo">Linkedin</LinkedIcon>
-                    <div className="h-[2vh]" />
-                    <LinkedIcon icon={Itch} href="https://arsith.itch.io/" alt="itch.io logo">itch.io</LinkedIcon>
-                    <div className="h-[15vh]" />
-                </div>
+        <div className="text-white py-[4vh] px-[8vw] h-full overflow-scroll">
+            <div className="flex flex-col gap-y-[1vh]">
+                <div className="h-[10vh]" />
+                <PageTitle>Contact</PageTitle>
+                <div className="h-[2vh]" />
+                <NonLinkedIcon icon={Email} alt="Mail logo">mharitsnf@gmail.com</NonLinkedIcon>
+                <div className="h-[2vh]" />
+                <LinkedIcon icon={Linkedin} href="https://www.linkedin.com/in/mharitsnf/" alt="Linkedin logo">Linkedin</LinkedIcon>
+                <div className="h-[2vh]" />
+                <LinkedIcon icon={Itch} href="https://arsith.itch.io/" alt="itch.io logo">itch.io</LinkedIcon>
+                <div className="h-[15vh]" />
             </div>
-            <Menu />
         </div>
     );
 }

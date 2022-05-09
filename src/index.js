@@ -10,6 +10,7 @@ import Home from './routes/home';
 import Projects from './routes/projects';
 import Resume from './routes/resume';
 import Contact from './routes/contact';
+import Project from './routes/project';
 
 import './fonts/Print-Clearly/PrintBold.otf';
 import './fonts/Print-Clearly/PrintClearly.otf';
@@ -20,10 +21,13 @@ root.render(
   <BrowserRouter>
     <React.StrictMode>
       <Routes>
-        <Route path='/' element={<App/>} />
-        <Route path='/projects' element={<Projects/>} />
-        <Route path='/resume' element={<Resume/>} />
-        <Route path='/contact' element={<Contact/>} />
+        <Route path='/' element={<App />}>
+          <Route path='/' element={<Home />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/projects/:projectRoute' element={<Project />} />
+          <Route path='/resume' element={<Resume />} />
+          <Route path='/contact' element={<Contact />} />
+        </Route>
       </Routes>
     </React.StrictMode>
   </BrowserRouter>
