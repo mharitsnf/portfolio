@@ -1,6 +1,4 @@
 
-import { Menu } from "../components/menu"
-import { Header } from "../components/header"
 import { PageTitle } from "../components/pageTitle"
 import { LinkedIcon, NonLinkedIcon } from "../components/linkedIcon"
 import Email from "../images/email.png"

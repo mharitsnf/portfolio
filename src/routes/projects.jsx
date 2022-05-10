@@ -12,7 +12,7 @@ export default function Projects() {
             <div className="h-[1vh] hidden lg:block" />
 
             <div className="flex flex-col flex-wrap gap-y-[5vh]">
-                <Header2>Games</Header2>
+                <Header2>Games and Computer Graphics</Header2>
 
                 <div className="
                             flex

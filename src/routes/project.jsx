@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 import { PageTitle } from "../components/pageTitle";
-import { LinkedIcon } from "../components/linkedIcon";
 import { getProject, getPublication, getWebAndApp } from "../data/projectsData";
 
 
@@ -14,16 +13,16 @@ export default function Project() {
                 <div className="h-[10vh]" />
 
                 <div className="flex flex-col gap-y-[10vh]">
-                    <PageTitle route={ project.route }>{project.name}</PageTitle>
-
-                    <div>
-                        <p className="font-print-clearly lg:text-[2vw]">
-                            {project.desc}
-                        </p>
+                    <div className="flex flex-col">
+                        <PageTitle route={project.route}>{project.name}</PageTitle>
+                        <p className="font-print-bold text-[4vw] lg:text-[2vw]">{project.time}</p>
                     </div>
 
-                    <LinkedIcon icon={ project.linkIcon } alt="Itch.io icon" href={ project.link }>{ project.callForAction }</LinkedIcon>
-
+                    {
+                        project.contents.map((content, i) => {
+                            return content(i)
+                        })
+                    }
                 </div>
 
                 <div className="h-[15vh]" />
