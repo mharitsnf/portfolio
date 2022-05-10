@@ -127,7 +127,7 @@ let projects = [
         contents: [
             (key) => {
                 return (
-                    <video key={key} loop muted className="h-[35vh]">
+                    <video key={key} loop autoplay muted className="h-[35vh]">
                         <source src={DeepDiveGameplay} type="video/mp4" />
                     </video>
                 )
