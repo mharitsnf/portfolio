@@ -395,7 +395,7 @@ let publications = [
             }, (key) => {
                 return (
                     <p key={key} className="font-print-clearly text-[1.5rem] lg:text-[1.5rem]">
-                        The research aimed to test three features from hand gesture images and implement a feature extraction algorithm from a single RGB camera for recognizing Indonesian Sign Language SIBI (Sistem Isyarat Bahasa Indonesia).
+                        The research aimed to test three features of hand gesture images and implement a hand gesture feature extraction algorithm from a single RGB camera for recognizing Indonesian Sign Language SIBI (Sistem Isyarat Bahasa Indonesia).
                         The features were then implemented into SIBI recognition software. The chosen features were Elliptical Fourier Descriptor, area, and centroid, as the combination of those
                         of the three exhibited good results, with accuracy up to 99%. The research was presented at ICOIAS 2019 at Singapore and was published afterwards.
                     </p>
