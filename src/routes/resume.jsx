@@ -44,8 +44,9 @@ export default function Resume() {
                                     font-print-clearly
                                     text-[4.5vw] lg:text-[2vw]
                                 ">
-                                    { education.university } • { education.time }
+                                    { education.subheader }
                                 </p>
+                                { education.description() }
                             </div>
                         )
                     })
