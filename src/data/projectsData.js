@@ -236,9 +236,8 @@ let projects = [
             }, (key) => {
                 return (
                     <p key={key} className="font-print-clearly text-[1.5rem] lg:text-[1.5rem]">
-                        The Voice was our initial attempt in a gam jam event. The project was developed in a group of 4 where the
-                        participants must follow the theme of the jam <span className="font-print-bold">"Out of Control"</span>. We interpreted the theme
-                        as "losing control of your character".
+                        The project was developed in a group of 4 where the participants must follow the theme of the jam <span className="font-print-bold">"Out of Control"</span>. We interpreted the theme
+                        as "losing control of your character". I was focusing on programming the game while assisting on the visual assets development.
                     </p>
                 )
             }, (key) => {

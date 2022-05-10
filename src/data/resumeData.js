@@ -5,7 +5,7 @@ const terralogiqLink = () => {
 
 let workExperiences = [
     {
-        title: "Career Break",
+        title: "Professional Development",
         company: "",
         subheader: "May 2020 - June 2021 • Jakarta, Indonesia",
         description: () => {
@@ -151,7 +151,7 @@ let skills = [
         subheader: "",
         content: () => {
             return (
-                <div className="font-print-clearly text-[4vw] lg:text-[1.5vw] flex flex-wrap gap-x-[3vw]">
+                <div className="font-print-clearly text-[4vw] lg:text-[1.5vw] flex flex-wrap gap-x-[3rvw]">
                     <p>Indonesian</p>
                     <p>English (IELTS 7.5)</p>
                 </div>
