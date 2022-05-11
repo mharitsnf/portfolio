@@ -158,7 +158,7 @@ let projects = [
                     <p key={key} className="font-print-clearly text-[1.5rem] lg:text-[1.5rem]">
                         I worked alone in this project, where I did all the programming by myself and used external assets for the visuals.
                         The game was praised for its unique design by other participants
-                        and the game managed to score a high rank in the fun criteria (top 5%).
+                        and the game managed to score a high rank in the innovation criteria (top 5%).
                     </p>
                 )
             }, (key) => {
