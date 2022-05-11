@@ -11,7 +11,7 @@ let workExperiences = [
         description: () => {
             return (
                 <p className="font-print-clearly text-[3.5vw] lg:text-[1.5vw]">
-                    Studied game development and computer graphics using Godot Engine, and front-end web development using ReactJS. Participated in 3 large-scale game jams as teams of 3-4, taking the role of team leader and programmer, while assisting on making the game’s visuals as well. Significant growth between the three developed games rank were seen, from top 57% to top 16% amongst thousands of participants.
+                    Studied game development and computer graphics using Godot Engine, and front-end web development using ReactJS. Participated in 3 large-scale game jams as teams of 4, taking the role of team leader and programmer, while assisting on making the game’s visuals as well. Significant growth between the three developed games rank were seen, from top 57% to top 16% amongst thousands of participants.
                 </p>
             )
         }
@@ -113,7 +113,7 @@ let skills = [
                 <div className="text-[3.5vw] lg:text-[1.5vw] flex flex-col gap-y-[2vh]">
                     <div>
                         <p className="font-print-bold text-[4vw] lg:text-[2vw]">Advanced</p>
-                        <div className="flex flex-wrap gap-x-[2vw] font-print-clearly">
+                        <div className="flex flex-wrap gap-x-[3.5vw] font-print-clearly">
                             <p>JavaScript (NodeJS / React)</p>
                             <p>Godot Engine / GDScript</p>
                             <p>HTML</p>
@@ -121,7 +121,7 @@ let skills = [
                     </div>
                     <div>
                         <p className="font-print-bold text-[4vw] lg:text-[2vw]">Intermediate</p>
-                        <div className="flex flex-wrap gap-x-[2vw] font-print-clearly">
+                        <div className="flex flex-wrap gap-x-[3.5vw] font-print-clearly">
                             <p>Unity / C#</p>
                             <p>C++</p>
                             <p>HLSL</p>
@@ -138,7 +138,7 @@ let skills = [
         subheader: "",
         content: () => {
             return (
-                <div className="font-print-clearly text-[4vw] lg:text-[1.5vw] flex flex-wrap gap-x-[2vw]">
+                <div className="font-print-clearly text-[4vw] lg:text-[1.5vw] flex flex-wrap gap-x-[3.5vw]">
                     <p>Figma</p>
                     <p>Blender</p>
                     <p>Aseprite (pixel art)</p>
@@ -151,7 +151,7 @@ let skills = [
         subheader: "",
         content: () => {
             return (
-                <div className="font-print-clearly text-[4vw] lg:text-[1.5vw] flex flex-wrap gap-x-[3rvw]">
+                <div className="font-print-clearly text-[4vw] lg:text-[1.5vw] flex flex-wrap gap-x-[3.5vw]">
                     <p>Indonesian</p>
                     <p>English (IELTS 7.5)</p>
                 </div>
