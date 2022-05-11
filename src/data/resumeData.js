@@ -79,7 +79,6 @@ let educations = [
         description: () => {
             return (
                 <div className="flex flex-col gap-[2vh] text-[3.5vw] lg:text-[1.5vw]">
-                    <p className="font-print-bold text-[4vw] lg:text-[2vw]">Key responsibilities:</p>
                     <div className="font-print-clearly">
                         <li>Visual track with focus on Computer Graphics, Game Design, and Interaction Design.</li>
                     </div>
@@ -93,7 +92,6 @@ let educations = [
         description: () => {
             return (
                 <div className="flex flex-col gap-[2vh] text-[3.5vw] lg:text-[1.5vw]">
-                    <p className="font-print-bold text-[4vw] lg:text-[2vw]">Key responsibilities:</p>
                     <div className="font-print-clearly">
                         <li>Majoring in media applications with relevant courses including Computer Graphics, Game Development, Digital Image Processing, and Interactive Web Programming.</li>
                         <li>Thesis “Feature Extraction from Smartphone Images by Using Elliptical Fourier Descriptor, Centroid and Area for Recognizing Indonesian Sign Language SIBI (Sistem Isyarat Bahasa Indonesia)” was presented on ICOIAS 2019 in Singapore and published afterwards.</li>
