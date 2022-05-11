@@ -21,9 +21,9 @@ export default function Resume() {
                 <Header2>Work Experience</Header2>
 
                 {
-                    getWorkExperiences().map(workExperience => {
+                    getWorkExperiences().map((workExperience, i) => {
                         return (
-                            <div className="flex flex-col flex-wrap gap-y-[2vh]">
+                            <div key={i} className="flex flex-col flex-wrap gap-y-[2vh]">
                                 <Header3>{workExperience.title}{workExperience.company}</Header3>
                                 <p className="
                                     font-print-clearly
@@ -42,9 +42,9 @@ export default function Resume() {
                 <Header2>Education</Header2>
 
                 {
-                    getEducations().map(education => {
+                    getEducations().map((education, i) => {
                         return (
-                            <div className="flex flex-col flex-wrap gap-y-[2vh]">
+                            <div key={i} className="flex flex-col flex-wrap gap-y-[2vh]">
                                 <Header3>{education.degreeProgram}</Header3>
                                 <p className="
                                     font-print-clearly
@@ -63,9 +63,9 @@ export default function Resume() {
                 <Header2>Skills</Header2>
 
                 {
-                    getSkills().map(skill => {
+                    getSkills().map((skill, i) => {
                         return (
-                            <div className="flex flex-col flex-wrap gap-y-[2vh]">
+                            <div key={i} className="flex flex-col flex-wrap gap-y-[2vh]">
                                 <Header3>{skill.category}</Header3>
                                 <p className={
                                     `font-print-clearly
