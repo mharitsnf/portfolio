@@ -11,12 +11,44 @@ import TheVoice1 from "../images/thevoice_1.png"
 import TheVoice2 from "../images/thevoice_2.png"
 import Sumie from "../images/sumie.png"
 import ILLKReport from "../data/If Looks Could Kill Report.pdf"
+import ASC from "../images/atmospheric-scattering.png"
 
 import { LinkedIcon } from "../components/linkedIcon"
 import { Link } from "react-router-dom"
 
 
 let projects = [
+    {
+        name: "OpenGL Atmospheric Scattering",
+        route: "atmospheric-scattering",
+        logo: "/atmospheric-scattering.png",
+        time: "May 2022",
+        contents: [
+            (key) => {
+                return (
+                    <div className="flex flex-wrap gap-[1rem]" key={key}>
+                        <img alt="ASC" className="w-full" src={ASC} />
+                    </div>
+                )
+            }, (key) => {
+                return (
+                    <div key={key} className="flex flex-wrap gap-x-[10vw]">
+                        <LinkedIcon href="https://github.com/mharitsnf/AtmosphericScattering" icon={GithubIcon} alt="Github logo" >Github</LinkedIcon>
+                    </div>
+                )
+            }, (key) => {
+                return (
+                    <p key={key} className="font-print-clearly text-[1.5rem] lg:text-[1.5rem]">
+                        Atmospheric Scattering is an OpenGL application that is currently being developed for the Computer Graphics and Interaction course. In this project, we aim to
+                        develop an interactive simulation of the atmospheric scattering - how the sunlight is scattered upon entering the atmosphere that in turn
+                        creates the blue sky and the red sunset. As such, the project is an implementation of the Rayleigh and Mie scattering phenomenon. The application is developed
+                        in C++ using OpenGL. The project is being developed by a team of three, where I contributed in the project setup, camera movement,
+                        and calculating the atmosphere density on the post-processing shader.
+                    </p>
+                )
+            },
+        ]
+    },
     {
         name: "If Looks Could Kill",
         route: "if-looks-could-kill",
@@ -37,7 +69,7 @@ let projects = [
             }, (key) => {
                 return (
                     <p key={key} className="font-print-clearly text-[1.5rem] lg:text-[1.5rem]">
-                        If Looks Could Kill is a first-person shooter game that utilizes eye tracking to move the in-game crosshair.
+                        If Looks Could Kill is a first-person shooter game developed for Multimodal Interaction and Interfaces course that utilizes eye tracking to move the in-game crosshair.
                         The game comes in two phases. In phase one, the player will be given a description of a man they have to follow. In phase two,
                         the player have to determine the evil mayor to defeat.
                     </p>
@@ -45,11 +77,11 @@ let projects = [
             }, (key) => {
                 return (
                     <p key={key} className="font-print-clearly text-[1.5rem] lg:text-[1.5rem]">
-                        The game is part of a research-through-design project that aims to understand the impact of gaze tracker in video games, especially
+                        The game is part of a research-through-design project that <span className="font-print-bold">aims to understand the impact of gaze tracker in video games</span>, especially
                         for first-person shooter (FPS) games. We first researched related studies regarding gaze tracker implementation in video games. From the research, we managed to determine
                         how should we implement the gaze tracking in our game, which was to control the camera and crosshair with gaze. The game was developed in Unity,
-                        where I contributed the most on the shader and post-processing development. After the game was completed, a user study was conducted to measure the
-                        impact of gaze tracing in FPS games.
+                        where I contributed the most on the shader and post-processing development. Beside Unity, I contributed in the research conducted prior to the development phase.
+                        After the game was completed, a user study using GEQ was conducted to measure the impact of gaze tracing in FPS games.
                     </p>
                 )
             }, (key) => {
@@ -84,26 +116,49 @@ let projects = [
                 )
             }, (key) => {
                 return (
-                    <p key={key} className="font-print-clearly text-[1.5rem] lg:text-[1.5rem]">
-                        STACC is a 2D puzzle game developed in under 48 hours for GMTK Game Jam 2021 using Godot Engine 3.
-                        The player has to navigate through the mazes by moving the character around. Whenever the character moves,
-                        the movement will be recorded and stored into a stack. After three moves, the stack will be full and the character
-                        cannot move anymore. To regain the ability to move, the player must empty the stack but by doing so forces
-                        the character to move according to the recorded movements.
-                    </p>
+                    <div key={key} className="flex flex-col gap-y-[1.5vh]">
+                        <p className="font-print-bold text-[2rem] lg:text-[2rem]">TLDR</p>
+                        <p className="font-print-clearly text-[1.5rem] lg:text-[1.5rem]">
+                            STACC is a 2D puzzle game developed in under 48 hours for GMTK Game Jam 2021 using Godot Engine 3.
+                            The player has to navigate through the mazes by moving the character around. Whenever the character moves,
+                            their previous movement will be recorded and stored into a stack. After three moves, the stack will be full and the character
+                            will not be able to move anymore. To regain the ability to move, the player must empty the stack, but in doing so, forces
+                            the recorded movements will be replayed consecutively and unstoppably. The game reached top 16% in overall rank.
+                        </p>
+                    </div>
                 )
             }, (key) => {
                 return (
-                    <p key={key} className="font-print-clearly text-[1.5rem] lg:text-[1.5rem]">
-                        The game was developed by a team of 4 people. The game jam participants must adhere to the theme of the event, which was <span className="font-print-bold">"Joined Together"</span>. 
-                        The theme could be freely interpreted by the participants and we decided to interpret it as "linking your previous movement with your future movement".
-                    </p>
+                    <div key={key} className="flex flex-col gap-y-[2vh]">
+                        <p className="font-print-bold text-[1.5rem] lg:text-[1.5rem]">The design process</p>
+                        <p className="font-print-clearly text-[1.5rem] lg:text-[1.5rem]">
+                            In this game jam, the participants must adhere to the theme of the event, which was <span className="font-print-bold">"Joined Together"</span> and the theme could be freely interpreted by the participants.
+                        </p>
+                        <p className="font-print-clearly text-[1.5rem] lg:text-[1.5rem]">
+                            Driven by that constraint, our first objective was to answer the questions <span className="font-print-bold">"how should we interpret the theme?"</span> and <span className="font-print-bold">"how should we design the game around our interpretation?"</span>
+                        </p>
+                        <p className="font-print-clearly text-[1.5rem] lg:text-[1.5rem]">
+                            We brainstormed by expanding on both the idea and workings of tangible objects and metaphorical concepts. For example, some of the initial ideas were based on
+                            chains as its nature is to "chain" or "link" certain things; what should we link? Should we link the character's movement? Or should we link other
+                            things that the character possesses?
+                        </p>
+                        <p className="font-print-clearly text-[1.5rem] lg:text-[1.5rem]">
+                            As the design question expands, we needed another constraint. An obvious constraint was time, as we only had 48 hours to deliver a complete game. We opted
+                            to create a mechanically simple game, but at the same time allows us display our creativity in our design. As the result, we decided to develop a puzzle game
+                            with a flexible mechanic that we can exploit to increase the puzzle variation.
+                        </p>
+                        <p className="font-print-clearly text-[1.5rem] lg:text-[1.5rem]">
+                            We arrived at <span className="font-print-bold">the concept of data structures</span>. We explored how can one design a game around a certain data structure while
+                            keep adhering to the theme.
+                        </p>
+                    </div>
                 )
             }, (key) => {
                 return (
                     <p key={key} className="font-print-clearly text-[1.5rem] lg:text-[1.5rem]">
                         In this project, I was responsible as the lead programmer of the game and the team leader of the project. I also assisted in creating the
-                        game's visual assets. The game was well-received by other participants and managed to receive significant increase in ranks compared to the previous games such as <Link className="underline" to="/projects/deep-dive">Deep Dive</Link> and <Link className="underline" to="/projects/the-voice">The Voice</Link>. 
+                        game's visual assets.
+                        The game was well-received by other participants and managed to receive significant increase in ranks compared to the previous games such as <Link className="underline" to="/projects/deep-dive">Deep Dive</Link> and <Link className="underline" to="/projects/the-voice">The Voice</Link>.
                     </p>
                 )
             }, (key) => {
@@ -140,25 +195,50 @@ let projects = [
                 )
             }, (key) => {
                 return (
-                    <p key={key} className="font-print-clearly text-[1.5rem] lg:text-[1.5rem]">
-                        Deep Dive is a 2D platformer game developed in 48 hours for Ludum Dare 48 using Godot Engine 3.
-                        The player must escape underwater dungeons along with the treasure. Whenever the character carries
-                        the treasure, the character sinks, but whenever they are not, they will float.
-                    </p>
+                    <div key={key} className="flex flex-col gap-y-[1.5vh]">
+                        <p className="font-print-bold text-[2rem] lg:text-[2rem]">TLDR</p>
+                        <p key={key} className="font-print-clearly text-[1.5rem] lg:text-[1.5rem]">
+                            Deep Dive is a 2D platformer game developed in 48 hours for Ludum Dare 48 using Godot Engine 3.
+                            The player must escape underwater dungeons along with the treasure. Whenever the character carries
+                            the treasure, the character sinks, but whenever they are not, they will float.
+                        </p>
+                    </div>
+                )
+            }, (key) => {
+                return (
+                    <div key={key} className="flex flex-col gap-y-[2vh]">
+                        <p className="font-print-bold text-[1.5rem] lg:text-[1.5rem]">The design process</p>
+                        <p key={key} className="font-print-clearly text-[1.5rem] lg:text-[1.5rem]">
+                            The jam comes with a theme <span className="font-print-bold">"deeper and deeper"</span> and can be freely interpreted by the participants.
+                            The game jam did not require the players to strictly follow the theme, but it is highly encouraged.
+                            As I found having a theme to be beneficial for the creative process, I decided to follow the theme.
+                            I interpreted the theme as "going deep into the underwater dungeon to get the treasure."
+                        </p>
+                        <p key={key} className="font-print-clearly text-[1.5rem] lg:text-[1.5rem]">
+                            My vision in this project was to create a game based on a <span className="font-print-bold">simple but highly expandable mechanic</span>. The time limit also contrained me to work in 2D,
+                            as working in 3D is considerably more challenging than working in 2D and requires more time to produce a high quality game. With those constraints set
+                            in place, the design process was started.
+                        </p>
+                        <p key={key} className="font-print-clearly text-[1.5rem] lg:text-[1.5rem]">
+                            There are two most common game views in 2D: top-down view and side-scrolling view. Both of them have their own advantages and disadvantages; top-down games
+                            allows the player to freely move around a map, similar to third-person games in 3D, but losing the ability to interact with gravity,
+                            while side-scrolling view adds some verticality while losing the more open feeling to the game. I believed gravity to be a fun mechanic to tamper with, so
+                            I went with the side-scrolling option.
+                        </p>
+                        <p key={key} className="font-print-clearly text-[1.5rem] lg:text-[1.5rem]">
+                            An obvious choice for a 2D side-scrolling game with gravity is the puzzle/action platforming genre. It is highly popular, easy to understand, and loved by
+                            a lot of people. In order to add some originality to the game, I need a unique mechanic twist added to it. Thanks to the theme that I had interpreted earlier,
+                            I found a matching mechanic: <span className="font-print-bold">the gravity works normally when the player is carrying the treasure, but the gravity will become upside-down without the treasure,
+                                simulating the floating and sinking feeling.</span>
+                        </p>
+                    </div>
                 )
             }, (key) => {
                 return (
                     <p key={key} className="font-print-clearly text-[1.5rem] lg:text-[1.5rem]">
-                        The jam comes with a theme <span className="font-print-bold">"deeper and deeper"</span> and can be freely interpreted by the participants. In this project, I interpreted the theme
-                        as "going deep into the dungeon to get the treasure".
-                    </p>
-                )
-            }, (key) => {
-                return (
-                    <p key={key} className="font-print-clearly text-[1.5rem] lg:text-[1.5rem]">
-                        I worked alone in this project, where I did all the programming by myself and used external assets for the visuals.
+                        As I worked alone in this project, I did all the programming by myself and used mostly external assets for the visuals, with slight modifications to it.
                         The game was praised for its unique design by other participants
-                        and the game managed to score a high rank in the innovation criteria (top 5%).
+                        and managed to score a high rank in the innovation criteria (top 5%).
                     </p>
                 )
             }, (key) => {
@@ -201,6 +281,15 @@ let projects = [
                         The shader was based on <a className="underline" target='_blank' rel='noreferrer' href="https://link.springer.com/chapter/10.1007/978-3-642-01973-9_87">this</a> research.
                     </p>
                 )
+            }, (key) => {
+                return (
+                    <div key={key} className="flex flex-col gap-y-[2vh]">
+                        <p key={key} className="font-print-clearly text-[1.5rem] lg:text-[1.5rem]">
+                            This is a hobby project that I did in order to learn more about computer graphics and post-processing effects. By doing this project,
+                            I learned some interesting concepts in image processing and computer graphics, such as convolution and sphere mapping.
+                        </p>
+                    </div>
+                )
             },
         ]
     },
@@ -220,26 +309,43 @@ let projects = [
             }, (key) => {
                 return (
                     <div key={key} className="flex flex-wrap gap-x-[10vw]">
-                        <LinkedIcon href="https://arsith.itch.io/the-voice" icon={ItchIcon} alt="Itch.io logo" >Play on Itch.io</LinkedIcon>
+                        <LinkedIcon href="https://arsith.itch.io/the-voice" icon={ItchIcon} alt="Itch.io logo" >Itch.io</LinkedIcon>
                         <LinkedIcon href="https://github.com/mharitsnf/TheVoiceGame" icon={GithubIcon} alt="Github logo" >Github</LinkedIcon>
                     </div>
                 )
             }, (key) => {
                 return (
-                    <p key={key} className="font-print-clearly text-[1.5rem] lg:text-[1.5rem]">
-                        The Voice is a turn based game developed in under 48 hours for GMTK Game Jam 2020 using Godot Engine 3.
-                        The player must win a tournament by collaborating with the in-game character Bob. The player can command
-                        Bob to perform actions such as attack or heal but Bob may choose not to listen. In order to ensure that Bob
-                        will listen, the player must build a good relationship with him.
-                    </p>
+                    <div key={key} className="flex flex-col gap-y-[1.5vh]">
+                        <p className="font-print-bold text-[2rem] lg:text-[2rem]">TLDR</p>
+                        <p key={key} className="font-print-clearly text-[1.5rem] lg:text-[1.5rem]">
+                            The Voice is a turn based game developed in under 48 hours for GMTK Game Jam 2020 using Godot Engine 3.
+                            The player must win a tournament by collaborating with the in-game character Bob. The player can command
+                            Bob to perform actions such as attack or heal but Bob may choose not to listen. In order to ensure that Bob
+                            will listen, the player must build a good relationship with him.
+                        </p>
+                    </div>
+                )
+            }, (key) => {
+                return (
+                    <div key={key} className="flex flex-col gap-y-[2vh]">
+                        <p className="font-print-bold text-[1.5rem] lg:text-[1.5rem]">The design process</p>
+                        <p key={key} className="font-print-clearly text-[1.5rem] lg:text-[1.5rem]">
+                            The theme of the jam <span className="font-print-bold">"Out of Control"</span> and all of the participants must adhere to the theme.
+                            It was up to the participants on how to interpret the theme, and so we decided to interpret the theme
+                            as "losing control of your character".
+                        </p>
+                        <p key={key} className="font-print-clearly text-[1.5rem] lg:text-[1.5rem]">
+                            Our interpretation opens up quite a lot of possibilities for the game. We had some ideas about making it a top-down or side-scrolling
+                            2D game, but ultimately we went with a turn-based game as we want to avoid similar concepts that might also be used by other participants.
+                        </p>
+                    </div>
                 )
             }, (key) => {
                 return (
                     <p key={key} className="font-print-clearly text-[1.5rem] lg:text-[1.5rem]">
-                        The project was developed in a group of 4 where the participants must follow the theme of the jam <span className="font-print-bold">"Out of Control"</span>. We interpreted the theme
-                        as "losing control of your character". I was focusing on programming the game while assisting on the visual assets development.
+                        The project was developed in a group of 4. In this project, I was focusing on programming the game while assisting on the visual assets development.
                     </p>
-                )
+                );
             }, (key) => {
                 return (
                     <div key={key} className="flex flex-col text-[1.5rem] lg:text-[1.5rem]">
@@ -278,9 +384,9 @@ let webAndApps = [
             }, (key) => {
                 return (
                     <p key={key} className="font-print-clearly text-[1.5rem] lg:text-[1.5rem]">
-                        Animeet is an interactive anime visualization tool that allows the users to discover and learn about anime however they like.
+                        Animeet is an <span className="font-print-bold">interactive anime visualization tool</span> that allows the users to discover and learn about anime however they like.
                         The tool is equipped with filters, zoom function, and brushes to aid the discovery process. Users can learn about the details
-                        of an anime by clicking on the dot and the tool will also display related animes as well.
+                        of any present anime by clicking on one of the dots. The data was acquired from <a className="underline" href="https://www.kaggle.com/datasets/vishalmane10/anime-dataset-2022" target="_blank" rel="noreferrer">Kaggle</a>.
                     </p>
                 )
             }, (key) => {
