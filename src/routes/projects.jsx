@@ -8,7 +8,10 @@ import { PageContainer } from "../components/pageContainer";
 export default function Projects() {
     return (
         <PageContainer>
-            <PageTitle>Projects</PageTitle>
+            <div className="flex flex-col">
+                <PageTitle>Projects</PageTitle>
+                <p className="font-print-clearly text-[1.2rem] lg:text-[1.5rem]">I have also started a blog to document my development process. You can access the blog <a className="underline" href="https://mharitsnf.notion.site/Harits-Learning-Blog-7cebbfefc58d424dafb43a03f577358b" target="_blank" rel="noreferrer">here</a>!</p>
+            </div>
             <div className="h-[1vh] hidden lg:block" />
 
             <div className="flex flex-col flex-wrap gap-y-[5vh]">
@@ -95,8 +98,8 @@ export default function Projects() {
                         getPublications().map(project => {
                             return (
                                 <Link to={`/projects/${project.route}`} key={project.route} className="flex flex-col gap-y-[2vh]">
-                                    <p className="font-print-bold text-[4.5vw] lg:text-[2vw]">{ project.name }</p>
-                                    <p className="font-print-clearly text-[3.5vw] lg:text-[1.5vw]">{ project.time }</p>
+                                    <p className="font-print-bold text-[4.5vw] lg:text-[2vw]">{project.name}</p>
+                                    <p className="font-print-clearly text-[3.5vw] lg:text-[1.5vw]">{project.time}</p>
                                 </Link>
                             );
                         })
